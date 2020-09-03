@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>practice</title>
+</head>
+<body>
+<h3>Register</h3>
+<form>
+<div>
+<label for="firstName">First Name:</label>
+<input type="text" name="firstName" required>
+<label for="lastName">Last Name:</label>
+<input type="text" name="lastName" required>
+</div>
+<div>
+<label for="male">Male</label>
+<input id="male" type="radio" name="gender">
+<label for="female">Female</label>
+<input id="female" type="radio" name="gender">
+<label for="other">Other</label>
+<input id="other" type="radio" name="gender">
+</div>
+<div>
+<label for="email">Email:</label>
+<input type="email" name="email" required>
+<label for="password">Password:</label>
+<input type="password" name="password" required pattern=".{4,8}" required title="input 4 to 8 password">
+</div>
+<div>
+<label for="birthday">Birthday:</label>
+<select>
+    <option>Day</option>
+    <option>11</option>
+    <option>12</option>
+    <option>13</option>
+</select>
+<select>
+    <option>Month</option>
+    <option>June</option>
+    <option>Feb</option>
+    <option>Mar</option>
+</select>
+<select>
+    <option>Years</option>
+    <option>1993</option>
+    <option>1994</option>
+    <option>1995</option>
+</select>
+</div>
+<div>
+<label for="agree">I agree to the terms and conditions</label>
+<input type="checkbox" name="agree" >
+<button>submit</button>
+</div>
+</form>
+
+
+
+</body>
+</html>
