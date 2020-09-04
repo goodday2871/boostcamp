@@ -1,0 +1,13 @@
+h1{
+    color : #a76425
+}
+
+li{
+    border:2px dashed greenyellow; color:red;
+}
+#special{
+    background-color:yellow
+}
+.do{
+    text-decoration:line-through;
+}
