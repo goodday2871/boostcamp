@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+window.setTimeout(function() {
+ var command = prompt("What do you like to do?")
+var i =0
+while(command!=="quit"){
+    if (command=="new"){
+        var str=[]
+    }else if(command=="add"){
+        var add=prompt("What do you want to add in list?")
+        str.push(add)
+    }else if(command=="list") {
+        str.forEach(function(todo){
+            console.log(str.indexOf(todo)+"."+todo)
+        })       
+    }else if(command=="delete"){
+        var dele = prompt("Which one do you want to delete")
+        dele =parseInt(dele,10)
+        str.splice(dele,1)
+        
+    }
+    else{
+        alert("It's not a command")
+    }
+        var command = prompt("What do you like to do?")
+}
+    console.log("app is done")
+
+
+
+  // put all of your JS code from the lecture here
+}, 500);
+
+
+
+
+</script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>

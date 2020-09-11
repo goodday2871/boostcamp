@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.change{
+    background-color:purple
+}
+div{
+    width:500px;
+    height:500px;
+}
+</style>
+
+
+
+</head>
+<body>
+<div>
+    <button class="but">change the background-color</button>
+</div>
+<script type="text/javascript">
+    var but = document.querySelector("div")
+    console.log(but)
+    but.addEventListener("click",function(){
+        but.classList.toggle("change")
+    })
+    
+    </script>
+    
+</body>
+</html>

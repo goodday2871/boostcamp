@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+
+/*
+function printReverse(str){
+for(var i=str.length;i>=0;i--){
+  console.log(str[i])
+ }
+}
+
+
+printReverse(["aaa","bbb","ccc","ddd"])
+
+*/
+/*
+function isUniform(str){
+for (var x=0;x<str.length;x++){
+    
+if (str[x]!==str[0]){
+    return false;}
+   
+}return true}
+
+console.log(isUniform([1,1,1,4]))
+*/
+/*
+function sumArray(str){
+ var total =0
+ for (var i=0;i<str.length;i++){
+     total+= str[i]
+ }
+ return total
+}
+
+console.log(sumArray([-5,100]))*/
+
+function sumArray(arr){
+    var total =0
+    arr.forEach(function(ele){
+        total+=ele
+    })
+    return total
+}
+console.log(sumArray([9,8,7,6]))
+
+
+
+/*
+function maxi(str){
+    var max = str[0]
+ for (var i=1;i<str.length;i++){
+     if (max<str[i]){
+         max = str[i]
+     }
+ }
+ return max
+}
+
+console.log(maxi([-5,3,100,4]))
+
+*/
+</script>
+</head>
+<body>
+
+</body>
+</html>

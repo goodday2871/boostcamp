@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+var movies=[
+{
+    "name":"bruges",
+    "seen":"seen",
+    "score":"5 stars"
+},
+{
+    "name":"frozen",
+    "seen":"not seen",
+    "score":"4.5 stars"
+},
+{
+    "name":"mad max fury road",
+    "seen":"seen",
+    "score":"5 stars"
+},
+{
+    "name":"les miserable",
+    "seen":"not seen",
+    "score":"3.5 stars"
+}
+
+]
+/*
+for (var i =0;i<movies.length;i++){
+    console.log("I"+" have "+ movies[i].seen+" "+ movies[i].name+" " +"-"+movies[i].score)
+}*/
+
+movies.forEach(function(e){
+    console.log("I"+" have "+ e.seen+" "+ e.name+" " +"-"+e.score)
+})
+</script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.selected{
+    color:green;
+    font-size:2rem;
+}
+.done{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+</style>
+
+
+
+</head>
+<body>
+<ul>
+    <li>list1</li>
+    <li>list2</li>
+    <li>list3</li>
+</ul>
+
+
+
+
+
+<script>
+var lis=document.querySelectorAll("li")
+
+for (var i =0;i<lis.length;i++){
+ lis[i].addEventListener("mouseover",function(){
+    this.classList.add("selected")
+ })
+ }
+
+ for (var i =0;i<lis.length;i++){
+ lis[i].addEventListener("mouseout",function(){
+    this.classList.remove("selected")
+ })
+ }
+
+ for (var i =0;i<lis.length;i++){
+ lis[i].addEventListener("click",function(){
+    this.classList.toggle("done")
+ })
+ }
+
+
+</script>
+    
+</body>
+</html>

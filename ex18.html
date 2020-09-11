@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.win{
+    color:green;
+}
+
+</style>
+
+
+
+</head>
+<body>
+<h1><span id="player1">0</span> to <span id="player2">0</span></h1>
+
+<h3>Playing to : <span id="toWin">5</span></h3>
+
+<input type="number" placeholder="input games set number">
+<button id="bt1">Player 1</button ><button id="bt2">Player2</button><button id="res">Reset</button>
+
+
+
+
+<script type="text/javascript">
+var score1 =0
+var score2 =0
+var toWin =5
+var gameOver=false;
+var bt1 = document.getElementById("bt1")
+bt1.addEventListener("click",function(){
+    var player1 =document.getElementById("player1")
+    if(!gameOver){
+    score1 +=1
+    player1.innerHTML=score1
+    if (score1 ===toWin){
+        gameOver=true
+        player1.classList.add("win")
+    }
+    }
+
+})
+
+
+var bt2 = document.getElementById("bt2")
+bt2.addEventListener("click",function(){
+    var player2 =document.getElementById("player2")
+    if(!gameOver){
+    score2 +=1
+    player2.innerHTML=score2
+    if (score2 ===toWin){
+        gameOver=true
+        player2.classList.add("win")
+    }
+    }
+
+})
+
+var res = document.getElementById("res")
+res.addEventListener("click",function(){
+    score1=0
+    player1.classList.remove("win")
+    player1.innerHTML=score1
+    score2=0
+    player2.classList.remove("win")
+    player2.innerHTML=score2
+    gameOver=false;
+    } 
+)
+var input=document.querySelector("input")
+input.addEventListener("change",function(){
+var win = document.querySelector("#toWin")
+win.innerHTML=input.value
+toWin=Number(input.value)
+
+})
+</script>
+    
+</body>
+</html>
